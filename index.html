@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALQUIPC | Consola de alquiler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="consola">
+        <header class="barra">
+            <div class="botones">
+                <span class="rojo"></span>
+                <span class="amarillo"></span>
+                <span class="verde"></span>
+            </div>
+            <p>ALQUIPC@consola:~</p>
+        </header>
+
+        <main class="contenido">
+            <h1>ALQUIPC_</h1>
+            <p class="subtitulo">Sistema de facturación de alquiler</p>
+
+            <section class="panel">
+                <h2>01 // DATOS DEL CLIENTE</h2>
+
+                <form id="formulario">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Ingrese el nombre" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="10 dígitos" maxlength="10" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+
+                    <h2>02 // DATOS DEL ALQUILER</h2>
+
+                    <label for="servicio">Tipo de servicio</label>
+                    <select id="servicio">
+                        <option value="ciudad">Dentro de la ciudad</option>
+                        <option value="fuera">Fuera de la ciudad (+5%)</option>
+                        <option value="establecimiento">En el establecimiento (-5%)</option>
+                    </select>
+
+                    <label for="equipos">Cantidad de equipos (2-100)</label>
+                    <input type="number" id="equipos" min="2" max="100" value="2" required>
+
+                    <label for="dias">Días de alquiler (1-30)</label>
+                    <input type="number" id="dias" min="1" max="30" value="1" required>
+
+                    <label for="extras">Días adicionales (0-30)</label>
+                    <input type="number" id="extras" min="0" max="30" value="0" required>
+
+                    <div class="acciones">
+                        <button type="submit">CALCULAR FACTURA</button>
+                        <button type="reset" class="secundario">LIMPIAR</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="panel factura">
+                <h2>03 // RESULTADO</h2>
+                <div id="resultado">
+                    <p class="espera">Esperando datos...</p>
+                </div>
+                <button id="nueva" class="secundario oculto">NUEVA FACTURA</button>
+            </section>
+
+            <footer>
+                <p>ALQUIPC SYSTEM <span>● EN LÍNEA</span></p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```

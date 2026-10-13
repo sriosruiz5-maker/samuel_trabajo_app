@@ -1,0 +1,215 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    background: #080d0a;
+    color: #39ff88;
+    font-family: "Courier New", monospace;
+}
+
+.consola {
+    max-width: 850px;
+    margin: auto;
+    border: 1px solid #245d3c;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #0d1510;
+    box-shadow: 0 0 25px #123c25;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 18px;
+    background: #18221b;
+    border-bottom: 1px solid #245d3c;
+}
+
+.botones {
+    display: flex;
+    gap: 8px;
+}
+
+.botones span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.rojo {
+    background: #ff5f57;
+}
+
+.amarillo {
+    background: #febc2e;
+}
+
+.verde {
+    background: #28c840;
+}
+
+.barra p {
+    margin: 0;
+    color: #b4c7b9;
+    font-size: 13px;
+}
+
+.contenido {
+    padding: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 12px #39ff88;
+}
+
+.subtitulo {
+    margin-top: 8px;
+    margin-bottom: 30px;
+    color: #91b49d;
+}
+
+.panel {
+    margin-bottom: 25px;
+    padding: 22px;
+    border: 1px solid #245d3c;
+    border-radius: 6px;
+    background: #101b14;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #39ff88;
+    font-size: 16px;
+    border-bottom: 1px dashed #245d3c;
+    padding-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #b4d8bf;
+    font-size: 13px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #286b43;
+    border-radius: 4px;
+    background: #080f0a;
+    color: #39ff88;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #39ff88;
+    box-shadow: 0 0 8px #174c2c;
+}
+
+select option {
+    background: #101b14;
+}
+
+.acciones {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px 16px;
+    border: 1px solid #39ff88;
+    border-radius: 4px;
+    background: #174d2d;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #237a45;
+}
+
+.secundario {
+    background: transparent;
+    color: #39ff88;
+}
+
+#resultado {
+    color: #c8e8d1;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+#resultado h3 {
+    color: #39ff88;
+}
+
+#resultado hr {
+    border: 0;
+    border-top: 1px dashed #286b43;
+}
+
+.total {
+    color: #39ff88;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.espera {
+    color: #718c79;
+}
+
+.oculto {
+    display: none;
+}
+
+footer {
+    padding-top: 5px;
+    color: #718c79;
+    font-size: 12px;
+}
+
+footer span {
+    color: #39ff88;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .contenido {
+        padding: 18px;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
